@@ -16,6 +16,7 @@ export default {
 <style scoped>
 
 .link-wrapper {
+  z-index: 1000;
   position: fixed;
   background-color: rgba(255,255,255,0.65);
   width: 55px;

@@ -30,29 +30,21 @@ export default {
     return {
       about: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. A voluptatum tempora quam ratione maiores itaque harum sed culpa provident expedita. Sapiente impedit ullam et maxime ex dolorem eligendi doloremque eum perferendis sit? Illo libero architecto illum quibusdam, saepe unde, nisi nobis officiis est ullam aperiam reprehenderit molestiae. Fugiat maxime similique minus magnam ipsum inventore laudantium a! Laboriosam, natus. Minima, tenetur quasi inventore natus repellat eum optio quaerat. Nam natus adipisci officiis soluta molestiae, ut laborum fuga porro assumenda nulla quaerat ad vitae eveniet id exercitationem iusto suscipit? Adipisci id molestias debitis quis eum similique incidunt tempore consectetur fuga, vitae aliquam."
     }
-  }
+  },
 
 }
 </script>
 
-<style>
-body {
-  background-color: rgb(59,44,31);
-}
-</style>
 
 <style scoped>
 
 
-
 .container {
-  
+  background-color: rgb(59,44,31);
   height: 100vh;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  
-  
 }
 
 .pic-text-container {
