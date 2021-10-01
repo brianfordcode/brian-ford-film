@@ -6,8 +6,17 @@
     <router-link to="/film">Film</router-link> |
     <router-link to="/contact">Contact</router-link>
   </div>
+
   <router-view/>
 </template>
+
+<script>
+
+export default {
+
+}
+</script>
+
 
 <style>
 
@@ -38,6 +47,6 @@
 }
 
 #nav a.router-link-exact-active {
-  color: blue;
+  color: rgb(17, 85, 15);
 }
 </style>

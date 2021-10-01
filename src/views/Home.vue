@@ -1,23 +1,20 @@
 <template>
-  <div class="link-wrapper">
-      <a href="#"><i class="link fab fa-imdb"></i></a>
-      <a href="#"><i class="link fab fa-linkedin"></i></a>
-  </div>
+<sideBar/>
 <div class="container">
   <div class="text-wrapper">
       <img id="logo" draggable="false" src="../assets/brian-ford-logo-white.png" alt="bf-logo">
-      <p>Filmmaker | Photographer</p>
+      <p>Filmmaker | Screenwriter | Photographer</p>
   </div>
 </div>
 
 </template>
 
 <script>
+import sideBar from '../components/sidebar.vue'
 
 export default {
   name: 'Home',
-  components: {
-  }
+  components: { sideBar }
 }
 </script>
 
@@ -30,8 +27,14 @@ export default {
   background-position: right;
   background-color: rgb(9,9,9);
   height: 100vh;
+
+}
+
+.text-wrapper {
+  height: 100%;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -46,32 +49,10 @@ export default {
   height: 350px;
 }
 
-.link-wrapper {
-  position: absolute;
-  z-index: 100;
-  background-color: rgba(255,255,255,0.75);
-  /* height: 100%; */
-  width: 50px;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-a {
-  transition: 0.1s ease-in-out;
-}
-
-a:hover {
-  transform: scale(1.1);
-}
-
-.fa-imdb, .fa-linkedin {
-  color: black;
-  font-size: 40px;
-  margin: 10px 0;
+@media screen and (max-width: 500px) {
+  #logo {
+    height: 200px;
+  }
 }
 
 
