@@ -24,7 +24,6 @@ export default {
   margin: 0;
   padding: 0;
 }
-
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -34,9 +33,9 @@ export default {
 #nav {
   padding: 30px 0;
   text-align: center;
-  /* margin-top: 75px; */
+  z-index: 100000;
   background-color: rgba(0,0,0,0.5);
-  position: absolute;
+  position: fixed;
   width: 100%;
 }
 
