@@ -2,7 +2,9 @@
   <div class="link-wrapper">
     <a href="#"><i class="link fab fa-imdb"></i></a>
     <a href="#"><i class="link fab fa-linkedin"></i></a>
+    <a href="#"><i class="fab fa-vimeo"></i></a>
     <a href="#"><i class="fas fa-envelope-square"></i></a>
+    
   </div>
       
 </template>
@@ -20,7 +22,7 @@ export default {
   position: fixed;
   background-color: rgba(255,255,255,0.65);
   width: 55px;
-  height: 200px;
+  height: 250px;
   top: 50%;
   transform: translateY(-50%);
   border-top-right-radius: 15px;
@@ -40,7 +42,7 @@ a:hover {
   transform: scale(1.1);
 }
 
-.fa-imdb, .fa-linkedin, .fa-envelope-square {
+.fa-imdb, .fa-linkedin, .fa-envelope-square, .fa-vimeo {
   color: black;
   font-size: 40px;
 }
@@ -49,7 +51,7 @@ a:hover {
   .link-wrapper {
     position: fixed;
     background-color: rgba(255,255,255,0.65);
-    width: 200px;
+    width: 250px;
     height: 55px;
     margin: 0 auto;
     top: 100%;

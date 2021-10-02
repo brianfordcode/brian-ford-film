@@ -52,12 +52,12 @@ export default {
   height: 100%;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .wrapper {
-  
-  
+  padding-top: 150px;
+  padding-bottom: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;

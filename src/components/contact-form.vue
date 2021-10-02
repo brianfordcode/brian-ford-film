@@ -103,7 +103,7 @@ export default {
         padding: 10px;
     }
 
-    @media screen and (max-width: 750px) {
+    @media screen and (max-width: 700px) {
         form div input {
             width: 200px;
         }

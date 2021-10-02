@@ -1,8 +1,7 @@
 <template>
 
-
-
   <sideBar/>
+  
   <div class="container">
     <div class="pic-text-container">
       <h1>About Me</h1>
@@ -11,13 +10,6 @@
       <img class="signature" src="../assets/signature-white.png" alt="signature"/>
     </div>
   </div>
-  
-
-
-
-
-
-
 
 </template>
 
@@ -37,7 +29,6 @@ export default {
 
 
 <style scoped>
-
 
 .container {
   background-color: rgb(59,44,31);

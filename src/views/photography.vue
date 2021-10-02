@@ -1,6 +1,7 @@
 <template>
   <sideBar/>
   <div class="container">
+    <photos/>
 
 
   </div>
@@ -13,17 +14,19 @@
 
 <script>
 import sideBar from "../components/sidebar.vue"
+import photos from "../components/photos.vue"
 
 export default {
-  components: { sideBar }
+  components: { sideBar, photos }
 
 }
 </script>
 
 <style scoped>
 .container {
-  background-color: rgb(29, 20, 3);
-  height: 100vh
+  padding-top: 120px;
+  padding-bottom: 100px;
+  background-color: rgb(238, 238, 238);
 }
 
 </style>
