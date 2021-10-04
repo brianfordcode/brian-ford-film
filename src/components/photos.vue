@@ -10,7 +10,7 @@
       'background-repeat': 'no-repeat',
       'background-attachment': 'fixed',
       'background-position': 'center',
-      'background-size': 'contain'
+      'background-size': '80%',
   }"
 />
 
@@ -37,7 +37,6 @@ export default {
             console.log(this.selectedImageIndex)
             this.modalOpen = true
             console.log(this.modalOpen)
-            console.log(document.getElementById('selected-image').innerWidth)
         },
         closePic() {
             this.modalOpen = false
@@ -160,6 +159,7 @@ export default {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 20px;
 }
 
 #selected-image {
