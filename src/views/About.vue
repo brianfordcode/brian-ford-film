@@ -32,14 +32,15 @@ export default {
 
 .container {
   background-color: rgb(59,44,31);
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
+  padding-top: 120px;
 }
 
 .pic-text-container {
-  padding-top: 120px;
+  
   width: 450px;
   color: rgb(211, 211, 211);
 }

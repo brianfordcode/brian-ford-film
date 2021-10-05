@@ -2,8 +2,6 @@
   <sideBar/>
   <div class="container">
     <photos/>
-
-
   </div>
 
 

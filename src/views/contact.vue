@@ -45,7 +45,7 @@ export default {
 
 .main {
   background-color: rgb(56,63,68);
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .container {
