@@ -9,8 +9,9 @@
       <div class="wrapper">
         <div class="text">
           <p class="title">Let's Get In Touch!</p>
-          <p>brianfordfilm@gmail.com</p>
-          <p>805 689 5579</p>
+          <p><i class="fas fa-phone"></i>  805 689 5579</p>
+          <p><i class="fas fa-envelope-square"></i>  brianfordfilm@gmail.com</p>
+          
         </div>
         
         <contactForm/>
@@ -77,6 +78,10 @@ export default {
 
 .title {
   font-size: 50px;
+}
+
+p {
+  margin-bottom: 5px;
 }
 
 @media screen and (max-width: 1100px) {

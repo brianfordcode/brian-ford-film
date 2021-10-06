@@ -27,7 +27,9 @@
             <img style="width: 150px" :src="`${film.award1}`" alt="award">
             <img style="width: 150px" :src="`${film.award2}`" alt="award">
           </div>
-          <span v-if="film.websiteTitle">Website: <a :href="`${film.websiteURL}`" target="_blank">{{film.websiteTitle}}</a></span>
+          <span v-if="film.websiteTitle">Website: 
+            <a :href="`${film.websiteURL}`" target="_blank">{{film.websiteTitle}}</a>
+          </span>
           
         </div>
 
@@ -51,7 +53,7 @@ export default {
         {
           url: "https://player.vimeo.com/video/77258876?h=14ac82ce37",
           title: "Home Front",
-          description: "10 Minute short. An American mother and son cope with the absence of the father who is fighting overseas during WWII.",
+          description: "10 Minute short. Shot on 16mm film. An American mother and son cope with the absence of the father who is fighting overseas during WWII.",
           roles: "Screenwriter, Director, Editor",
           award1: require("../assets/awards/gi-laurel.png"),
           award2: require("../assets/awards/high-desert-laurel.png"),
@@ -61,7 +63,7 @@ export default {
         {
           url: "https://player.vimeo.com/video/77258875?h=d067f71b65",
           title: "Brant Cotton - See If I Care",
-          description: "Music Video for country singer Brant Cotton. Shot on location in the Santa Ynez Valley, CA",
+          description: "Music Video for country singer Brant Cotton. Shot on location in the Santa Ynez Valley, CA.",
           roles: "Director, Editor",
           websiteTitle: "Brant Cotton",
           websiteURL: "https://www.facebook.com/Brantcotton/",
@@ -151,7 +153,7 @@ iframe {
 }
 
 span {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .title {
@@ -171,7 +173,47 @@ a:hover{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom:20px;
+  padding-bottom: 20px;
 }
+
+@media screen and (max-width: 1200px){
+
+  .film-wrapper {
+    flex-direction: column;
+    width: min-content;
+  }
+
+  .summary {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .awards {
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 768px){
+  iframe {
+    width: 500px;
+    height: 290px;
+  }
+}
+
+@media screen and (max-width: 576px){
+  iframe {
+    width: 300px;
+    height: 150px;
+  }
+
+  .summary {
+    width: 85%;
+  }
+  .film-wrapper {
+    padding-bottom: 0;
+  }
+}
+
+
 
 </style>
