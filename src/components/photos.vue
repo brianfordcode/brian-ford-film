@@ -1,21 +1,21 @@
 <template>
 
 <!-- MODAL -->
-<div 
-  v-if="selectedImage"
-  :class="{ modal: true, open: modalOpen }"
-  @click="closePic()"
-  :style="{
-      'background-image': `url(${selectedImage.url})`,
-      'background-repeat': 'no-repeat',
-      'background-attachment': 'fixed',
-      'background-position': 'center',
-      'background-size': '80%',
-  }"
-/>
+<div class="modal-wrapper"
+     v-if="selectedImage"
+     :class="{ modal: true, open: modalOpen }"
+     @click="closePic()">
+    <img
+        :src="selectedImage.url"
+        :style="{
+          'display': 'block',
+          'max-width': '100%',
+          'max-height': '100%'
+        }"
+    />
+</div>
 
-
-
+<!-- MAIN PAGE -->
 <div class="image-container">
   <img
     v-for="(image, index) in images"
@@ -34,13 +34,10 @@ export default {
     methods: {
         expandPic(index) {
             this.selectedImageIndex = index
-            console.log(this.selectedImageIndex)
             this.modalOpen = true
-            console.log(this.modalOpen)
         },
         closePic() {
             this.modalOpen = false
-            console.log(this.modalOpen)
         }
     },
      computed: {
@@ -54,61 +51,37 @@ export default {
             modalOpen: false,
             images: [
                 {
-                    url: "https://picsum.photos/300/200",
+                    url: "https://live.staticflickr.com/65535/51577670212_15f9cfec78_b.jpg",
                 },
                 {
-                    url: "https://picsum.photos/300/200",
+                    url: "https://live.staticflickr.com/65535/51579165564_d77cc27434_b.jpg",
                 },
                 {
-                    url: "https://picsum.photos/300/200",
+                    url: "https://live.staticflickr.com/65535/51579402205_5f83e26975_b.jpg[/img][/url][url=https://flic.kr/p/2mzTVh2]IMG_9752[/url] by [url=https://www.flickr.com/photos/194155689@N04/]Brian Ford[/url], on Flickr",
                 },
                 {
-                    url: "https://picsum.photos/200/300",
+                    url: "https://live.staticflickr.com/65535/51579402105_ba0ab532f6_b.jpg[/img][/url][url=https://flic.kr/p/2mzTVfi]IMG_9680[/url] by [url=https://www.flickr.com/photos/194155689@N04/]Brian Ford[/url], on Flickr",
                 },
                 {
-                    url: "https://picsum.photos/200/300",
+                    url: "https://live.staticflickr.com/65535/51579401915_3a56e8b784_b.jpg[/img][/url][url=https://flic.kr/p/2mzTVc2]IMG_9616[/url] by [url=https://www.flickr.com/photos/194155689@N04/]Brian Ford[/url], on Flickr",
                 },
                 {
-                    url: "https://picsum.photos/300/200",
+                    url: "https://live.staticflickr.com/65535/51579401630_21ffd33469_b.jpg[/img][/url][url=https://flic.kr/p/2mzTV77]IMG_9611[/url] by [url=https://www.flickr.com/photos/194155689@N04/]Brian Ford[/url], on Flickr",
                 },
                 {
-                    url: "https://picsum.photos/200/300",
+                    url: "https://live.staticflickr.com/65535/51578716038_dce164a479_b.jpg[/img][/url][url=https://flic.kr/p/2mzQpiy]IMG_9039[/url] by [url=https://www.flickr.com/photos/194155689@N04/]Brian Ford[/url], on Flickr",
                 },
                 {
-                    url: "https://picsum.photos/200/300",
+                    url: "https://live.staticflickr.com/65535/51578483511_11ec308ee3_b.jpg[/img][/url][url=https://flic.kr/p/2mzPdbt]IMG_8974[/url] by [url=https://www.flickr.com/photos/194155689@N04/]Brian Ford[/url], on Flickr",
                 },
                 {
-                    url: "https://picsum.photos/300/200",
+                    url: "https://live.staticflickr.com/65535/51578483341_28c3d50617_b.jpg[/img][/url][url=https://flic.kr/p/2mzPd8x]IMG_8829[/url] by [url=https://www.flickr.com/photos/194155689@N04/]Brian Ford[/url], on Flickr",
                 },
                 {
-                    url: "https://picsum.photos/200/300",
+                    url: "https://live.staticflickr.com/65535/51579400540_06b2dfd937_b.jpg[/img][/url][url=https://flic.kr/p/2mzTUMj]IMG_7832[/url] by [url=https://www.flickr.com/photos/194155689@N04/]Brian Ford[/url], on Flickr",
                 },
                 {
-                    url: "https://picsum.photos/300/200",
-                },
-                {
-                    url: "https://picsum.photos/300/200",
-                },
-                {
-                    url: "https://picsum.photos/200/300",
-                },
-                {
-                    url: "https://picsum.photos/300/200",
-                },
-                {
-                    url: "https://picsum.photos/200/300",
-                },
-                {
-                    url: "https://picsum.photos/300/200",
-                },
-                {
-                    url: "https://picsum.photos/300/200",
-                },
-                {
-                    url: "https://picsum.photos/200/300",
-                },
-                {
-                    url: "https://picsum.photos/300/200",
+                    url: "",
                 },
             ]
         }
@@ -132,6 +105,8 @@ export default {
 }
 
 .image-container img {
+    width: 300px;
+    height: auto;
     margin: 5px;
     transition: .15s ease-in-out;
 }
@@ -144,28 +119,33 @@ export default {
 
 /* MODAL */
 
+.modal-wrapper {
+    position: fixed;
+    padding: 40px;
+    top: 82px;
+    bottom: 0;
+    left: 0;
+    right: 0;z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-wrapper p {
+    color: white;
+    /* font-size: 200px; */
+}
+
 .modal {
     display: none;
 }
 
 .open {
-    z-index: 100;
-    position: fixed;
-    top: 82px;
-    bottom: 0;
-    left: 0;
-    right: 0;
     background-color: rgba(0,0,0,0.75);
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 20px;
-}
-
-#selected-image {
-    width: 1000px;
-    max-width: 80%;
-    height: auto;
+    background-size: contain;
 }
 
 
