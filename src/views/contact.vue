@@ -11,16 +11,9 @@
           <p class="title">Let's Get In Touch!</p>
           <p><i class="fas fa-phone"></i>  805 689 5579</p>
           <p><i class="fas fa-envelope-square"></i>  brianfordfilm@gmail.com</p>
-          
         </div>
-        
         <contactForm/>
       </div>
-
-
-
-
-
 </div>
   
     
@@ -50,10 +43,8 @@ export default {
 }
 
 .container {
-  height: 100%;
   display: flex;
   justify-content: space-around;
-  align-items: flex-start;
 }
 
 .wrapper {
@@ -63,8 +54,6 @@ export default {
   justify-content: space-between;
   align-items: center;
   width: 900px;
-  /* height: 600px; */
-  /* position: relative; */
   /* border: 1px solid blue; */
 }
 
@@ -72,8 +61,6 @@ export default {
   color: white;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  /* border: 1px solid blue; */
 }
 
 .title {
@@ -81,7 +68,7 @@ export default {
 }
 
 p {
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 
 @media screen and (max-width: 1100px) {
