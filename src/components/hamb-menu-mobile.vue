@@ -13,15 +13,15 @@
 
     </div>
 
-<div id="nav" v-if="isOpen" @click="isOpen = !isOpen">
-    <div class="links">
-        <router-link to="/"><p>Home</p></router-link>
-        <router-link to="/about"><p>About</p></router-link>
-        <router-link to="/photography"><p>Photography</p></router-link>
-        <router-link to="/film"><p>Film</p></router-link>
-        <router-link to="/contact"><p>Contact</p></router-link>
+    <div id="nav" v-if="isOpen" @click="isOpen = !isOpen">
+        <div class="links">
+            <router-link to="/"><p>Home</p></router-link>
+            <router-link to="/about"><p>About</p></router-link>
+            <router-link to="/photography"><p>Photography</p></router-link>
+            <router-link to="/film"><p>Film</p></router-link>
+            <router-link to="/contact"><p>Contact</p></router-link>
+        </div>
     </div>
-</div>
 </div>
 
 
@@ -48,13 +48,13 @@ export default {
 
 
     #hamb-menu {
-        z-index: 10000;
+        z-index: 10000000000;
         display: flex;
         flex-direction: column;
         cursor: pointer;
         transition: transform .5s ease-in-out;
         user-select: none;
-        padding: 20px;
+        padding: 34px;
     }
     #hamb-menu span:nth-child(2) {
         margin: 5px 0;
@@ -87,7 +87,7 @@ export default {
     justify-content: center;
     width: 100%;
     height: 100%;
-    transform: translateY(56px);
+    transform: translateY(84px);
     
 }
 
