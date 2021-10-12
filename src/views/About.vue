@@ -28,17 +28,20 @@ export default {
 
 .container {
   background-color: rgb(59,44,31);
-  min-height: 100vh;
+  min-height: calc(100vh - 100px);
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  padding-top: 120px;
+  padding-top: 100px;
+  /* border: 1px solid white; */
 }
 
 .pic-text-container {
   
+  /* border: 1px solid blue; */
   width: 450px;
   color: rgb(211, 211, 211);
+  padding-bottom: 30px;
 }
 
 h1 {

@@ -92,7 +92,7 @@ export default {
         {
           url: "https://player.vimeo.com/video/572907199?h=83e4423f22",
           title: "EPA Dream Center Promo Video",
-          description: "Commercial for EPA Dream Center, a tutoring service for underprivelaged youth in East Palo Alto, CA.",
+          description: "Commercial for EPA Dream Center, a tutoring service for underprivileged youth in East Palo Alto, CA.",
           roles: "Editor",
           websiteTitle: "EPA Dream Center",
           websiteURL: "https://www.epadreamcenter.org/",
