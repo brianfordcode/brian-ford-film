@@ -18,20 +18,19 @@ export default {
 
 <style>
 #nav {
-  /* padding: 30px 0; */
-  /* text-align: center; */
   z-index: 100000;
   background-color: rgba(0,0,0,0.5);
   position: fixed;
   width: 50%;
   display: flex;
   align-items: center;
-  border: 1px solid blue;
+  justify-content: space-around;
 }
 
 .links {
-    border: 1px solid white;
-    width: 50%;
+    width: 60%;
+    max-width: 500px;
+    min-width: 350px;
     display: flex;
     justify-content: space-between;
 }

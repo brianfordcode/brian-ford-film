@@ -1,14 +1,18 @@
 <template>
   <navigation/>
+  <sideBar/>
 
   <router-view/>
 </template>
 
 <script>
 import navigation from "./components/nav-bar.vue"
+import sideBar from "./components/sidebar.vue"
+
+
 export default {
   components: {
-    navigation
+    navigation, sideBar
   }
 
 }

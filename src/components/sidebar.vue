@@ -1,9 +1,9 @@
 <template>
   <div class="link-wrapper">
-    <a href="#"><i class="link fab fa-imdb"></i></a>
-    <a href="#"><i class="link fab fa-linkedin"></i></a>
+    <a href="#"><i class="fab fa-imdb"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
     <a href="#"><i class="fab fa-vimeo"></i></a>
-    <a href="#"><i class="fas fa-envelope-square"></i></a>
+    <a href="#"><i class="fab fa-flickr"></i></a>
     
   </div>
       
@@ -42,7 +42,7 @@ a:hover {
   transform: scale(1.1);
 }
 
-.fa-imdb, .fa-linkedin, .fa-envelope-square, .fa-vimeo {
+.fa-imdb, .fa-linkedin, .fa-envelope-square, .fa-vimeo, .fa-flickr {
   color: black;
   font-size: 40px;
 }

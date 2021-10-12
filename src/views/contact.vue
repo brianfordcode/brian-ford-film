@@ -3,8 +3,6 @@
 
 <div class="main">
 
-  <sideBar/>
-
   <div class="container">
       <div class="wrapper">
         <div class="text">
@@ -14,10 +12,9 @@
         </div>
         <contactForm/>
       </div>
-</div>
-  
-    
   </div>
+
+</div>
 
 
 
@@ -26,11 +23,10 @@
 </template>
 
 <script>
-import sideBar from "../components/sidebar.vue"
 import contactForm from "../components/contact-form.vue"
 
 export default {
-  components: { sideBar, contactForm }
+  components: { contactForm }
 
 }
 </script>

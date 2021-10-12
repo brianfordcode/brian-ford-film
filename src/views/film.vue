@@ -1,5 +1,4 @@
 <template>
-  <sideBar/>
 
   <div class="main">
 
@@ -43,10 +42,8 @@
 </template>
 
 <script>
-import sideBar from "../components/sidebar.vue"
 
 export default {
-  components: { sideBar },
   data() {
     return {
       films: [
@@ -63,7 +60,7 @@ export default {
         {
           url: "https://player.vimeo.com/video/77258875?h=d067f71b65",
           title: "Brant Cotton - See If I Care",
-          description: "Music Video for country singer Brant Cotton. Shot on location in the Santa Ynez Valley, CA.",
+          description: "Music Video for country singer Brant Cotton. Shot on Red One camera system. Shot on location in the Santa Ynez Valley, CA.",
           roles: "Director, Editor",
           websiteTitle: "Brant Cotton",
           websiteURL: "https://www.facebook.com/Brantcotton/",
@@ -71,7 +68,7 @@ export default {
         {
           url: "https://player.vimeo.com/video/573268188?h=ada4683bc1",
           title: "Xinspire Promo Video",
-          description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. A voluptatum tempora quam ratione maiores itaque harum sed culpa provident expedita.",
+          description: "Promo Video for Xinspire, a Bay Area, CA company that provides mentoring software to universities and beyond. Shot on Nikon D810.",
           roles: "Director, Editor, Camera",
           websiteTitle: "Xinspire",
           websiteURL: "https://www.xinspire.com/",
@@ -79,15 +76,15 @@ export default {
         {
           url: "https://player.vimeo.com/video/573274760?h=8151271e35",
           title: "Brunch at Sandbar",
-          description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. A voluptatum tempora quam ratione maiores itaque harum sed culpa provident expedita.",
+          description: "15 second spot for popular Santa Barbara, CA restaurant Sandbar.",
           roles: "Director, Producer, Editor,",
           websiteTitle: "Sandbar Santa Barbara",
           websiteURL: "https://sandbarsb.com/",
         },
         {
           url: "https://player.vimeo.com/video/584613989?h=77c56203df",
-          title: "House Tour for Real Estate",
-          description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. A voluptatum tempora quam ratione maiores itaque harum sed culpa provident expedita.",
+          title: "House Tour",
+          description: "Video for advertising a rental property.",
           roles: "Director, Editor, Camera",
           websiteTitle: "",
           websiteURL: "",
@@ -95,7 +92,7 @@ export default {
         {
           url: "https://player.vimeo.com/video/572907199?h=83e4423f22",
           title: "EPA Dream Center Promo Video",
-          description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. A voluptatum tempora quam ratione maiores itaque harum sed culpa provident expedita.",
+          description: "Commercial for EPA Dream Center, a tutoring service for underprivelaged youth in East Palo Alto, CA.",
           roles: "Editor",
           websiteTitle: "EPA Dream Center",
           websiteURL: "https://www.epadreamcenter.org/",

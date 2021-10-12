@@ -1,9 +1,6 @@
 <template>
 
 <div class="main">
-
-  <sideBar/>
-
   <div class="container">
     <div class="text-wrapper">
         <img id="logo" draggable="false" src="../assets/brian-ford-logo-white.png" alt="bf-logo">
@@ -18,10 +15,8 @@
 </template>
 
 <script>
-import sideBar from '../components/sidebar.vue'
 export default {
   name: 'Home',
-  components: { sideBar }
 }
 </script>
 
