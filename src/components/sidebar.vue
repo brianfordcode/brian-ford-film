@@ -1,9 +1,9 @@
 <template>
   <div class="link-wrapper">
-    <a href="#"><i class="fab fa-imdb"></i></a>
-    <a href="#"><i class="fab fa-linkedin"></i></a>
-    <a href="#"><i class="fab fa-vimeo"></i></a>
-    <a href="#"><i class="fab fa-flickr"></i></a>
+    <a href="https://www.imdb.com/name/nm3487924/?ref_=tt_ov_dr" target="_blank"><i class="fab fa-imdb"></i></a>
+    <a href="https://www.linkedin.com/in/brianfordfilm/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://vimeo.com/brianfordfilm" target="_blank"><i class="fab fa-vimeo"></i></a>
+    <a href="https://www.flickr.com/photos/194155689@N04/" target="_blank"><i class="fab fa-flickr"></i></a>
     
   </div>
       
