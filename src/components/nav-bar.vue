@@ -31,7 +31,7 @@ export default {
 
 #nav {
   z-index: 100000;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.75);
   position: fixed;
   width: 100%;
   display: flex;

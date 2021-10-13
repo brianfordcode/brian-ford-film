@@ -16,7 +16,7 @@
 export default {
   data() {
     return {
-      about: "Hello! My name is Brian Ford. "
+      about: "Hello! My name is Brian Ford. I attended Loyola Marymount University School of Film and Television and have worked in the film and photo industry all over the world. Check out my photography and film projects. If you like what you see, let's get together and make something amazing! "
     }
   },
 

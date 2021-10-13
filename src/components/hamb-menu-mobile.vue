@@ -38,12 +38,13 @@ export default {
 <style scoped>
 
     .container {
+        z-index: 100000;
         position: fixed;
         display: flex;
         justify-content: flex-end;
         /* border: 1px solid white; */
         width: 100%;
-        background-color: rgba(0,0,0,0.5);
+        background-color: rgba(0,0,0,0.75);
     }
 
 
@@ -54,7 +55,7 @@ export default {
         cursor: pointer;
         transition: transform .5s ease-in-out;
         user-select: none;
-        padding: 34px;
+        padding: 40px;
     }
     #hamb-menu span:nth-child(2) {
         margin: 5px 0;
