@@ -1,6 +1,7 @@
 <template>
     <div id="nav">
         <div class="links">
+            <img v-if="!isHome" src="../assets/brian-ford-logo-white.png"/>
             <router-link to="/">Home</router-link>
             <router-link to="/about">About</router-link>
             <router-link to="/photography">Photography</router-link>
@@ -18,6 +19,11 @@ import mobileMenu from "./hamb-menu-mobile.vue"
 export default {
     components: {
         mobileMenu
+    },
+    computed: {
+        isHome() {
+            return this.$route.name === 'Home'
+        }
     }
 
 }
@@ -34,6 +40,7 @@ export default {
   background-color: rgba(0,0,0,0.75);
   position: fixed;
   width: 100%;
+  height: 36px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -47,6 +54,10 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+img {
+    height: 50px;
 }
 
 .links a {

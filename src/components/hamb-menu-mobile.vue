@@ -56,7 +56,7 @@ export default {
 
 img {
     z-index: 100000000000;
-    position: absolute;
+    position: fixed;
     height: 50px;
     padding: 20px 20px 20px 40px;
 }
