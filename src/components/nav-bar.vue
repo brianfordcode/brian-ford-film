@@ -1,12 +1,11 @@
 <template>
     <div id="nav">
         <div class="links">
-            <img v-if="!isHome" src="../assets/brian-ford-logo-white.png"/>
-            <router-link to="/">Home</router-link>
-            <router-link to="/about">About</router-link>
-            <router-link to="/photography">Photography</router-link>
-            <router-link to="/film">Film</router-link>
-            <router-link to="/contact">Contact</router-link>
+            <router-link v-if="!isHome" to="/"><img src="../assets/brian-ford-logo-white.png"/></router-link>
+            <router-link class="router" to="/about">About</router-link>
+            <router-link class="router" to="/photography">Photography</router-link>
+            <router-link class="router" to="/film">Film</router-link>
+            <router-link class="router" to="/contact">Contact</router-link>
         </div>
     </div>
 
@@ -66,7 +65,7 @@ img {
   text-decoration: none;
 }
 
-.links a.router-link-exact-active {
+.links .router.router-link-exact-active {
   border: 1px solid white;
   padding: 5px;
 }

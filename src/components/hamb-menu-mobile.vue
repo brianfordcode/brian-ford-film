@@ -1,6 +1,6 @@
 <template>
 <div class="entire-page">
-    <img v-if="!isHome" src="../assets/brian-ford-logo-white.png"/>
+    <router-link v-if="!isHome" to="/"><img src="../assets/brian-ford-logo-white.png"/></router-link>
     <div class="container">
         
         <div id= "hamb-menu"
@@ -17,7 +17,6 @@
 
     <div id="nav" v-if="isOpen" @click="isOpen = !isOpen">
         <div class="links">
-            <router-link to="/"><p>Home</p></router-link>
             <router-link to="/about"><p>About</p></router-link>
             <router-link to="/photography"><p>Photography</p></router-link>
             <router-link to="/film"><p>Film</p></router-link>
