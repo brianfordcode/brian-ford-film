@@ -1,6 +1,8 @@
 <template>
 <div class="entire-page">
+    <img v-if="!isHome" src="../assets/brian-ford-logo-white.png"/>
     <div class="container">
+        
         <div id= "hamb-menu"
             :class="{ 'open': isOpen }"
             @click="isOpen = !isOpen"
@@ -32,6 +34,11 @@ export default {
     data() { return {
         isOpen: false
     }},
+    computed: {
+        isHome() {
+            return this.$route.name === 'Home'
+        }
+    }
 }
 </script>
 
@@ -41,12 +48,18 @@ export default {
         z-index: 100000;
         position: fixed;
         display: flex;
+        align-items: center;
         justify-content: flex-end;
-        /* border: 1px solid white; */
         width: 100%;
         background-color: rgba(0,0,0,0.75);
     }
 
+img {
+    z-index: 100000000000;
+    position: absolute;
+    height: 50px;
+    padding: 20px 20px 20px 40px;
+}
 
     #hamb-menu {
         z-index: 10000000000;
