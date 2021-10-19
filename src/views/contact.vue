@@ -7,8 +7,8 @@
       <div class="wrapper">
         <div class="text">
           <p class="title">Let's Get In Touch!</p>
-          <p><i class="fas fa-phone"></i>  805 689 5579</p>
-          <p><i class="fas fa-envelope-square"></i>  brianfordfilm@gmail.com</p>
+          <span><i class="fas fa-phone"></i><a href="tel: 805-689-5579">805 689 5579</a></span>
+          <span><i class="fas fa-envelope-square"></i><a href="mailto:brianfordfilm@gmail.com ">brianfordfilm@gmail.com</a></span>
         </div>
         <contactForm/>
       </div>
@@ -66,6 +66,18 @@ export default {
 p {
   margin-bottom: 3px;
 }
+
+a {
+  margin-left: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+span {
+  margin: 0 0 3px;
+}
+
+
 
 @media screen and (max-width: 1100px) {
   .container {
